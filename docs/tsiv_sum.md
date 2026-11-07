@@ -32,7 +32,6 @@ For `p` reduced-form coefficients and `k` endogenous regressors, the two outcome
 ```r
 library(sandwich)
 library(geigen)
-source("tsivfuncAR_with_sum_onestep_stars_fixed.R")
 
 inst <- c("z1", "z2")
 exog <- c("age", "year")
