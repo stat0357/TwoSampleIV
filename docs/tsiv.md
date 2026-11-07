@@ -16,7 +16,6 @@ tsiv(dfY, dfX, Y, X, exog, inst, Vhety_str, Vhetx_str,
 ```r
 library(sandwich)
 library(geigen)
-source("tsivfuncAR_with_sum_onestep_stars_fixed.R")
 
 res <- tsiv(
   dfY, dfX, Y="outcome", X="schooling",
