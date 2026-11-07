@@ -1,0 +1,21 @@
+Package: TwoSampleIV
+Type: Package
+Title: Two-Sample Instrumental Variables Estimation
+Version: 0.1.0
+Authors@R: c(
+    person("Frank", "Windmeijer",
+           email = "frank.windmeijer@stats.ox.ac.uk",
+           role = c("aut", "cre")),
+    person("Fatima", "Kasenally",
+           role = "aut"),
+    person("Ruoxi", "Guan",
+           role = "aut")
+    )
+Description: Provides two-sample instrumental variables estimation using individual-level data or regression summary statistics. Includes one-step, two-step, continuously updated estimation, and available diagnostics and confidence sets.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports: stats, geigen
+Suggests: sandwich
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0
