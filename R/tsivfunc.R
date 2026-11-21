@@ -390,10 +390,10 @@ tsiv <- function(dfY,dfX,Y,X,exog,inst,Vhety_str,Vhetx_str,full=TRUE,CUE=FALSE,h
     grepl("^(stats::)?vcov\\(", compact)
 }
 
-# Hide robust first-stage diagnostics only when both samples use homoskedastic covariance.
+# Under homoskedasticity, retain conventional F and effective F; hide robust F and effective-F critical value.
 .tsiv_first_stage <- function(dat, homosk_covariance = FALSE) {
   if (is.null(dat) || !isTRUE(homosk_covariance)) return(dat)
-  dat[, setdiff(names(dat), c("rob_F_stat", "F_geff", "cv_F_geff")), drop = FALSE]
+  dat[, setdiff(names(dat), "rob_F_stat"), drop = FALSE]
 }
 
 # Describe the covariance estimators actually used in the two samples.
